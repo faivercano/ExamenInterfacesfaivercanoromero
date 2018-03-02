@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primarycolor"
+    >
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitStart"
+        android:visibility="visible"
+        app:srcCompat="@drawable/girl" />
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/yep"
+        android:textStyle="bold"
+        android:layout_marginTop="32dp"
+        android:text="@string/yep"
+        android:textSize="60sp"
+        android:textColor="@color/texticons"
+        />
+
+    <LinearLayout android:id="@+id/editTextlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/yep"
+        android:orientation="vertical"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:padding="10dp"
+        android:background="@color/texticons"
+        >
+        <EditText
+            android:id="@+id/userNameField"
+            style="@style/editText"
+            android:hint="Username"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/dividercolor">
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/passwordField"
+            android:hint="password"
+            android:inputType="textPassword"
+            android:textColorHint="@color/dividercolor"
+            style="@style/editText" />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/editTextlayout"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/darkprimarycolor"
+        android:onClick="mostrarVentana"
+        android:text="LOGIN"
+        android:textColor="@color/texticons"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/SignUpText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:onClick="mostrarVentana"
+        android:text="UEM handlycarfted"
+        android:textColor="@android:color/white"
+        tools:layout_editor_absoluteX="154dp"
+        tools:layout_editor_absoluteY="234dp" />
+
+
+
+
+
+
+
+</RelativeLayout>

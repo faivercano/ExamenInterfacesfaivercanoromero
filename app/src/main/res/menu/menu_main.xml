@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.rcl.appuem.MainActivity">
+    <item
+        android:id="@+id/perfil"
+        android:icon="@drawable/ic_plusone_medium_off_client"
+        android:title="Item"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/alumno"
+        android:orderInCategory="100"
+        android:title="alumno"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/icono1"
+        android:icon="@drawable/ic_plusone_medium_off_client"
+        android:title="Item"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/icono2"
+        android:orderInCategory="100"
+        android:title="perfil"
+        app:showAsAction="never" />
+</menu>
